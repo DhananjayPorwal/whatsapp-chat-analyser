@@ -4,6 +4,12 @@
 
 The objective of this project is to provide a tool for statistical and visual analysis of WhatsApp chat data. It allows users to gain insights into their chat history by analyzing various aspects such as message frequency, word usage, media sharing, links shared, and more.
 
+## Demo Video
+
+[![WhatsApp Chat Analyser Demo Video](https://raw.githubusercontent.com/DhananjayPorwal/whatsapp-chat-analyser/main/demo-screenshot.jpeg)](https://drive.google.com/file/d/1CLglp0d50_7h5RKumreh0X8gzdGpaDbG/view?usp=sharing)
+
+
+
 ## Installation ⚙️
 
 To use the WhatsApp Chat Analyser, follow these steps:
