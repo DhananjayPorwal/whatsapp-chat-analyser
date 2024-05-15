@@ -129,22 +129,25 @@ if uploaded_file is not None:
 
 
         # Most Common Words
-        st.title("Most Common Words")
+        try:
+            st.title("Most Common Words")
 
-        col1, col2 = st.columns(2)
-        
-        most_common_words_df = hl.most_common_words(selected_user, df)
-        
-        with col1:
-            fig, ax = plt.subplots()
-            ax.barh(most_common_words_df[0], most_common_words_df[1], color = '#25D366')
-            ax.set_facecolor('#dcf8c6')
-            plt.xticks(rotation= 'vertical')
-            st.pyplot(fig)
+            col1, col2 = st.columns(2)
+            
+            most_common_words_df = hl.most_common_words(selected_user, df)
+            
+            with col1:
+                fig, ax = plt.subplots()
+                ax.barh(most_common_words_df[0], most_common_words_df[1], color = '#25D366')
+                ax.set_facecolor('#dcf8c6')
+                plt.xticks(rotation= 'vertical')
+                st.pyplot(fig)
 
 
-        with col2:
-            st.dataframe(most_common_words_df)
+            with col2:
+                st.dataframe(most_common_words_df)
+        except:
+            st.write("We cannot compare to oneself.")
 
         # Emoji Analysis
             
